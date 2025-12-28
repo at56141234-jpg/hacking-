@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL_OVERRIDE_v8.4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    <canvas id="matrix"></canvas>
+
+    <div id="overlay" onclick="startHacking()">
+        <div class="glitch" data-text="CLICK TO INITIALIZE">CLICK TO INITIALIZE</div>
+    </div>
+
+    <div class="main-frame" id="terminal">
+        <div class="status-bar">
+            <span>TERMINAL: ROOT@KERNEL_X64</span>
+            <span id="clock">00:00:00</span>
+        </div>
+        <div class="output" id="output-log">
+            <div class="system-msg">[SYSTEM]: WAITING FOR USER INITIALIZATION...</div>
+        </div>
+    </div>
+
+    <div id="final-shock" class="hidden">
+        <div class="glitch-wrapper">
+            <h1 class="glitch" data-text="HACKING COMPLETED">HACKING COMPLETED</h1>
+        </div>
+        <div class="alert-box" id="alert-content">
+            </div>
+    </div>
+
+    <div id="blackout" class="hidden">
+    <div class="nepali-message">
+        K hereyko? AD ko note xah, garnu jau aani Malai ni pathau.
+    </div>
+</div>
+
+    <div id="blackout" class="hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
